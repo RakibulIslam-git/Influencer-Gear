@@ -32,5 +32,52 @@ nav li a{
 .nav-title{
     font-weight: 800;
     font-size: 1.4rem;
-    font-weight: 243px;
+    width: 243px;
+}
+
+/* Header back-ground image add */
+
+.header{
+    background-image: url('/images/Circle\ design.svg');
+    background-repeat: no-repeat;
+    background-position-x: 700px;
+    background-position-y: 110px;
+}
+
+/* Header part banner section styles */
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 165px 100px 120px;
+}
+.banner-content{
+    max-width: 595px;
+}
+.banner-title{
+    font-weight: 900;
+    font-size: 3.2rem;
+    max-width: 595px;
+    margin-bottom: 0px;
+}
+
+.banner-description{
+    font-weight: 700;
+    font-size: 1rem;
+    max-width: 500px;
+    color: rgba(58, 58, 58, 1);
+}
+
+.preebook{
+    background-color: rgba(224, 44, 109, 1);
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 10px 56px 10px 24px;
+    color: white;
+    border-radius: 50px;
+    border: none;
+}
+.banner-pic{
+    max-width: 440px;
 }
