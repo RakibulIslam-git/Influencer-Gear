@@ -4,4 +4,33 @@ body{
 }
 
 
+/* Header Part styles */
 
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 120px;
+    
+}
+nav ul{
+    display: flex;
+    /* align-items: center; */
+    gap: 34px;
+}
+nav ul li{
+    list-style: none;
+}
+nav li a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    color: rgba(58, 58, 58, 1);
+
+}
+.nav-title{
+    font-weight: 800;
+    font-size: 1.4rem;
+    font-weight: 243px;
+}
