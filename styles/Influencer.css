@@ -3,7 +3,10 @@ body{
     font-family: 'Poppins';
 }
 
-
+header{
+    max-width: 1370px;
+    margin: 0 auto;
+}
 /* Header Part styles */
 
 
@@ -40,7 +43,8 @@ nav li a{
 .header{
     background-image: url('/images/Circle\ design.svg');
     background-repeat: no-repeat;
-    background-position-x: 700px;
+    background-position: relative;
+    background-position-x: 720px;
     background-position-y: 110px;
 }
 
@@ -80,4 +84,19 @@ nav li a{
 }
 .banner-pic{
     max-width: 440px;
+}
+
+
+/* sponsors part styles */
+
+.sponsor-items{
+    display: grid;
+    /* justify-content: space-between; */
+    grid-template-columns: repeat(7, 1fr);
+    gap: 50px;
+    align-items: center;
+    margin: 0 auto;
+    border: 1px solid gray;
+    max-width: 940px;
+    padding: 36px 62px;
 }
