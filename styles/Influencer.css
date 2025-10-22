@@ -19,7 +19,7 @@ nav{
 }
 nav ul{
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     gap: 34px;
 }
 nav ul li{
@@ -36,6 +36,7 @@ nav li a{
     font-weight: 800;
     font-size: 1.4rem;
     width: 243px;
+    text-align: center;
 }
 
 /* Header back-ground image add */
@@ -62,14 +63,14 @@ nav li a{
 .banner-title{
     font-weight: 900;
     font-size: 3.2rem;
-    max-width: 595px;
+    width: 595px;
     margin-bottom: 0px;
 }
 
 .banner-description{
     font-weight: 700;
     font-size: 1rem;
-    max-width: 500px;
+    width: 500px;
     color: rgba(58, 58, 58, 1);
 }
 
@@ -88,15 +89,64 @@ nav li a{
 
 
 /* sponsors part styles */
-
-.sponsor-items{
-    display: grid;
-    /* justify-content: space-between; */
-    grid-template-columns: repeat(7, 1fr);
-    gap: 50px;
-    align-items: center;
+.sponsor{
+    max-width: 1110px;
     margin: 0 auto;
+}
+.sponsor-items {
+    max-width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid gray;
-    max-width: 940px;
-    padding: 36px 62px;
+
+}
+
+.img{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 30px 20px;
+    gap: 40px;
+    max-width: 990px;
+    margin: 0 auto;
+   
+    
+}
+
+
+
+
+/* Responsive media query for Mobile devices  */
+.hide{
+    display: none;
+}
+@media screen and (max-width:576px) {
+
+    nav,
+    nav > ul
+    {
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banner-content{
+        text-align: center;
+        margin-left: 50px;
+        
+    }
+    .banner-description{
+        text-align: center;
+        margin-left: 50px;
+    }
+
+    .img{
+
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        
+    }
 }
